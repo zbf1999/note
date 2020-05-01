@@ -3,3 +3,6 @@ git branch:查看分支
 git checkout:切换分区
 如果你觉得 git add 提交缓存的流程太过繁琐，Git 也允许你用 -a 选项跳过这一步。命令格式如下：
 git commit -a
+
+更新远程仓库到本地：
+git pull orgin master
