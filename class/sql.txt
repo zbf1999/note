@@ -1,0 +1,49 @@
+例一。创建存储过程‘STUSCORE', 显示成绩在90分以上的学生学号、课程号与成绩
+create procedure stuscore
+as
+select * from sc where score>90
+
+创建无参存储过程的语法格式：
+create procedure procedure_name
+with recompile | encryption | recompile,encryption(按需求填写)
+for replication(按需求填写)
+as t-sql语句
+注：recompile 表明不会缓存该存储过程的计划
+    encryption 加密
+    for replication 不能在订阅服务器上执行为复制创建的存储过程
+
+
+例二.创建存储过程’senterscoretop5‘ ， 显示入学成绩最高额5名同学信息，并加密
+create procedure senterscoretop5
+with encryption
+as 
+select top 5 *
+from student
+order by senterscore desc
+
+创建参数化存储过程-输入参数
+{@parameter 参数名} =default(可选项)
+
+例三.创建存储过程’stuinfo'，实现通过学号查询学生信息
+create procedure stuinfo @stuid char(10)
+as
+select *
+from student 
+where sid=@stuid
+
+创建userlogin ,带有参数用户名@un和密码@pw
+create procedure userlogin @un char(12),@pw char(6)
+as
+begin
+    if @un = 'admin' and @pw = '123456'
+        print '欢迎登陆'
+    else
+        print'错误'
+end
+
+创建输出
+@参数名 output
+
+执行存储过程
+->image
+
