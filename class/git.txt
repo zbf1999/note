@@ -9,3 +9,6 @@ git pull orgin master
 
 打开word/excel/ppt/文本文件   start winword/excel/powerpnt/notepad
 打开任务管理器  explorer
+
+删除目录
+git clean -fd

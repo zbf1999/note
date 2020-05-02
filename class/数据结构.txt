@@ -1,0 +1,50 @@
+队列的基本概念
+队尾（rear)-允许插入的一段
+对头(front)-允许删除的一端
+
+顺序队列的类型定义
+#define maxsize 5
+typedef struct //定义结构体类型
+{
+    ElemType data[MaxSize];
+    int front,rear; //队首和队尾指针
+}SqQueue; //顺序队列
+
+初始化队列
+void InitQueue(SqQueue *&q)
+{
+    q = (SqQueue *)malloc(sizeof(SqQueue));
+    q->front = q->rear = -1;
+}
+
+入队列
+q->data[++q->rear] = e;
+
+出队列
+e = q->data[++q->front];
+
+循环队列
+入队
+q->rear = (q->rear + 1)%MaxSize;
+q->data[q->rear] = e;
+
+出队
+q->front = (q->front + 1)%MaxSize;
+e = q->data[q->front];
+
+队空：q->rear == q->front;
+队满: q->front ==(q->rear+1)%MaxSize;
+
+链队列结构定义
+typedef struct qnode
+{
+    ElemType data;
+    struct qnode *next;
+}QNode;  //数据节点类型
+
+typedef struct
+{
+    QNode *front;
+    QNode *rear;
+}LiQueue; //链队节点类型
+
