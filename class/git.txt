@@ -6,3 +6,6 @@ git commit -a
 
 更新远程仓库到本地：
 git pull orgin master
+
+打开word/excel/ppt/文本文件   start winword/excel/powerpnt/notepad
+打开任务管理器  explorer
