@@ -47,3 +47,16 @@ end
 执行存储过程
 ->image
 
+--（6）在student数据库中，新建一个名为proc_avg2的存储过程，根据学生学号，查询该学生的平均成绩，定义输出参数输出平均成绩。
+--执行该存储过程，查询学号为15540105的学生的平均成绩。
+create proc proc_avg2
+	@stuid int ,
+	@stuavg real output
+as
+	select @stuavg = AVG([成绩])
+	from [dbo].[成绩表]
+	where [dbo].[成绩表].学号 = @stuid
+
+declare @s int
+exec proc_avg2 15540105 ,@s output
+print @s
