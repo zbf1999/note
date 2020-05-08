@@ -60,3 +60,7 @@ as
 declare @s int
 exec proc_avg2 15540105 ,@s output
 print @s
+
+删除存储过程
+    drop ...
+

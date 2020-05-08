@@ -1,0 +1,128 @@
+索引和切片
+    第一个字符的编号是0 空格也是编号，右边开始时-1
+    倒序输出  r[::-1]
+    a.splist(" ")
+    "_".join(lst)
+    "i like {0} and {1}".format("php","money")
+python 6种内置对象
+    整数和浮点数
+    字符和字符串
+    列表[]
+    元组（）
+    字典{}
+    集合
+列表
+    lsp = []
+    lsp()
+    列表有循序，元素可重复
+    dir(lst)查看列表方法
+    append/insert/extend   插入
+    pop/remove/clear 删除
+    lst.sort()   排序  lst.sort(reverse=True)
+    sorted() / list(reverse(lst2))只排序，不改变原序列
+    将列表转换为字符串    "".join(lst)
+元组
+    元素不能修改
+    t = (1,2)/tuple([1,23])
+字典
+    d = {}    映射   键值
+    d['name']  查询字典name的值
+    del d['city'] d.pop  d.popitem()  删除
+    d.setdefault('name','zw')  d['b'] = 'hello'    d.uodate 插入
+集合
+    s.add()    添加
+    无序
+    s.pop()   s.discard()  s.remove  删除
+    f_set = frozenset('qiwsir')   创建不可变集合
+
+方法
+    "a".upper()     "A".louer()
+    pow  round   ord
+
+
+布尔类型
+    bool:True  False
+    A and B A为false返回A，否则返回B
+    A or B  A为True返回A
+    not A 
+简单的语句
+    import
+        import math
+        import math as ko
+        from math import pi 
+        from math import pi as si 
+        from math import *
+    赋值语句
+    a,_,c = 1,2,3    //不用2了
+    a, *b = 1,2,3    //不要2了
+    a += 1    a = a+1
+函数基础
+    def function_name(x,y,z)
+
+嵌套函数
+    def opt_seq(func, seq):
+        r = [func(i) for i in seq]
+        return r 
+    
+    opt_seq(abs, range(-5,5))
+
+    def f3():
+        global a   //调用函数外的变量
+    
+    def foo():
+        a = 1
+        def bar():
+            nonloacl a    //可以调用foo里的a了
+            a = a + 1
+            print(a)
+            bar()
+
+装饰器
+    @def
+
+特殊函数
+    lambda
+        lam = lambda x: x + 3
+
+    map
+        m = map(lambda x: x + 3, range(10))
+
+    filter
+        过滤器
+        f = filter(lambda x: x>0, n)
+
+
+条件语句
+    a = 3 if a >4 else 6
+
+for
+    d = {'name':'zw','age':20}
+    dt = {}
+    for k in d:
+        print(k,d[k])
+        dt[d[k]] = k
+    
+    几个常用函数
+        range()
+            range(4) -> 0,1,2,3
+            range(i,j)->i,i+1....j-1
+
+        zip()
+            a = 'zw'
+            b = 'cap'
+            z = zip(a,b)
+            把a,b配对
+        enumerate()
+        列表解析
+            lst = []
+            [i**2 for i in range(10)]
+            [i for i in range(100) if i%3==0]
+
+while
+    a = 0
+    while a<3:
+        s = input('input your lang:')
+        if s == "python":
+            print("your lang is {0}".format(s))
+            break
+    
