@@ -25,7 +25,7 @@ order by senterscore desc
 {@parameter 参数名} =default(可选项)
 
 例三.创建存储过程’stuinfo'，实现通过学号查询学生信息
-create procedure stuinfo @stuid char(10)
+create procedure stuinfo @stuid char(10)                   !!!char后要跟（x）
 as
 select *
 from student 
