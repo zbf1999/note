@@ -126,3 +126,48 @@ while
             print("your lang is {0}".format(s))
             break
     
+类
+    描述所创建的对象共同的属性和方法
+    class SuperMan:
+    
+        def _init_(self,name):
+            self.name = name
+            self.gender = 1
+            self.single = False
+            self.illness = False
+
+        def nine_negative_kungfu(self):
+            return "Ya! You have to die."
+
+        guojing = SuperMan('guojing')
+        print(guojing.name)
+        print(guojing.gender)
+        kongfu = guojing.nine_negative_kungfu()
+        print(kongfu)
+
+    对象
+    面向对象程序设计
+    实例和属性
+        f = Foo()      #创建实例
+        Foo.group = 'a'
+        
+方法
+    使用装饰器：@classmethod
+    类方法第一个参数：cls,表示类本身
+
+    使用@staticmethod
+    静态方法不与实例绑定
+    
+继承
+    class C(P):
+        pass
+    子类和父类的方法同名，会覆盖父类的方法
+    class Student(Person):
+        def __init__(self, school, name, age)
+            self.school = school
+            super().__init__(name, age)
+        def grade(self, n):
+            print("hahaha")
+
+多态和封装
+    
