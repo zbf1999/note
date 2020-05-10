@@ -1,34 +1,90 @@
-索引和切片
-    第一个字符的编号是0 空格也是编号，右边开始时-1
-    倒序输出  r[::-1]
-    a.splist(" ")
-    "_".join(lst)
-    "i like {0} and {1}".format("php","money")
-python 6种内置对象
+内置对象类型
     整数和浮点数
     字符和字符串
     列表[]
     元组（）
     字典{}
     集合
-列表
-    lsp = []
-    lsp()
-    列表有循序，元素可重复
-    dir(lst)查看列表方法
-    append/insert/extend   插入
-    pop/remove/clear 删除
-    lst.sort()   排序  lst.sort(reverse=True)
-    sorted() / list(reverse(lst2))只排序，不改变原序列
-    将列表转换为字符串    "".join(lst)
-元组
-    元素不能修改
-    t = (1,2)/tuple([1,23])
-字典
-    d = {}    映射   键值
-    d['name']  查询字典name的值
-    del d['city'] d.pop  d.popitem()  删除
-    d.setdefault('name','zw')  d['b'] = 'hello'    d.uodate 插入
+    
+    #变量与对象
+        a = 3
+            a 是变量 ； 3是对象
+        在python中不能单独定义变量
+        变量引用了对象
+        对调a和b
+            a, b = b, a 
+        变量的定义
+            望文生义
+    
+    #整数和浮点数
+        确定对象类型
+            type(3)
+        整数 int 
+        浮点数 float
+        定义整数类型
+            int(345)
+        id(3)
+            获取3的内存地址
+        5%2
+            取余数
+        divmod(5, 2)
+            取余数
+        更多内置函数见官方文档
+        函数也是对象
+        help(id)
+            查看id的用法
+        round()
+            四舍五入
+        math
+            import math    #引进math模块
+            dir(math)   #查看math中的函数
+            math.pi     #使用math的pi
+            help(math.pow)   #查看pow怎么用
+                math.pow(2, 3)   #2**3;     2^3;     2x2x2
+                math.sin(输入度数)
+
+    #字符和字符串
+        ORD('a') = 97
+        bin(97) = '0b1100001'
+        unicode 简写  utf   最常用 utf-8
+        定义字符串
+            a = "python"
+            a = 'what\'s your name'      
+        
+        序列
+        索引和切片
+            第一个字符的编号是0 空格也是编号，右边开始时-1
+                a = [1,2,3,4,5,6]
+                a[-1] = 3
+            倒序输出  r[::-1]
+            a[:5:2] = 1, 3, 5    #步长为2，隔一个取一个
+            
+            input()
+                用户输入
+            print()打印
+            
+            a.splist(" ")
+            "_".join(lst)
+            "i like {0} and {1}".format("php","money")
+
+    #列表
+        lsp = []
+        lsp()
+        列表有循序，元素可重复
+        dir(lst)查看列表方法
+        append/insert/extend   插入
+        pop/remove/clear 删除
+        lst.sort()   排序  lst.sort(reverse=True)
+        sorted() / list(reverse(lst2))只排序，不改变原序列
+        将列表转换为字符串    "".join(lst)
+    #元组
+        元素不能修改
+        t = (1,2)/tuple([1,23])
+    #字典
+        d = {}    映射   键值
+        d['name']  查询字典name的值
+        del d['city'] d.pop  d.popitem()  删除
+        d.setdefault('name','zw')  d['b'] = 'hello'    d.uodate 插入
 集合
     s.add()    添加
     无序
@@ -170,4 +226,119 @@ while
             print("hahaha")
 
 多态和封装
+    python 中通过私有化的方式实现封装
+
+定制类
+    #分数运算
+        from fractions import Fraction
+        m, n = Fraction(1, 6), Fraction(3, 6)
     
+控制属性的访问
+    1.优化内存：__slots__
+        class bar:
+            __slots__ = ('name', 'age')
+            def __getattr__(self, name):
+                print("you user getattr")
+            def __setattr__(self, name, value)：
+                print("you use setattr")
+                self.__dict__[name] = value
+
+    2。掌握与属性相关的特殊方法
+        __getattr__
+        __setattr
+
+迭代器和生成器
+     hasattr(list, "__iter__")    #具有__iter__方法的称为可迭代方法
+     iter_lst = iter(lst)
+     iter_lst.__next__()
+
+     import itertools
+     counter = itertools.count(start=7)
+     
+     生成器解析
+     gt = (x**2 for x in range(10))
+
+标准库和第三方安装包
+    pip install 
+    pypi镜像使用
+        临时使用
+            pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+        设为默认
+            1.升级pip到最新版本
+            2.pip install pip -u
+            3.pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+        升级pip到最新版本
+            pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pip -u
+    pip  list
+    pip uninstall
+
+编写和发布模块
+    if __name__ == "__main__":
+    .py文件
+
+    包
+        有一定层次的目录结构
+         python -m pip install --user --upgrade setuptools wheel
+         检查setuptools 和 wheel 是不是最新版本，如果不是就升级
+         
+         登陆test.pypi
+         
+         pip install twine
+         安装发布工具
+
+         python setup.py sdist bdist_wheel
+         twine upload --repository-url https://test.pypi.org/legacy/ ./dist/*
+
+
+文件读写
+    import os
+    os.getcwd()
+
+    创建文件
+        f = open("test.txt","w")    r  只读；a  增加 ；   
+        f.write('my name is capzw')
+        f.close()
+
+        创建.csv文件
+            import csv
+            data = []
+            with open('csvfile.csv', 'w') as f:
+                writer = csv.writer(f)
+                writer.writerows(data)
+
+            f = open('csvfile.csv')
+            reader = csv.reader(f)
+            for row in reader:
+                print(row)
+            
+        pip install openpyxl    使用excel
+        
+        from openpyxl import Workbook
+        wb = Workbook()
+        ws = wb.active
+        ws.title
+        ws.title = 'python'
+        ws2 = wb.create_sheet('java)
+        ws['E1'] = 111
+        ws.cell(row=2, column=2, value=222)
+        wb.save('example.xlsx')
+异常处理
+    try
+    while True:
+    try:
+        a = float(input('first number:'))
+        b = float(input('second number:'))
+        r = a /b
+        print("{0} / {1} = {2}".format(a, b, r))
+        break
+    except (ZeroDivisionError, ValueError):
+        print("hahahahaha")
+    #except ValueError:
+    #    print("lalalalala")
+    except:
+        break
+
+案例
+    SDK 开发工具集合
+
+    API  应用程序接口
