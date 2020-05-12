@@ -1,0 +1,12 @@
+g = (i for i in range(10))
+print('------------')
+print(g)
+print('------------')
+print(f'next: {g.__next__()}')
+print('------------')
+print('next: ', g.__next__)
+print('------------')
+print('-' * 10)
+print('------------')
+for i in g:
+    print(i)
