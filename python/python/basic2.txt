@@ -1,0 +1,4 @@
+pandas
+    serise   行
+    可视化
+        安装Matplotlib

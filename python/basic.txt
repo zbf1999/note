@@ -109,6 +109,7 @@ conda操作
         无序
         s.pop()   s.discard()  s.remove  删除
         f_set = frozenset('qiwsir')   创建不可变集合
+        会自动删除重复元素0
 
 方法
     "a".upper()     "A".louer()
