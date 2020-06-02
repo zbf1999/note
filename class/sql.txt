@@ -106,3 +106,17 @@ print @s
 	backup database | log database_name
 	to <backup_device> | disk = 'phisical_file_address'
 	whith differential    //差异备份时用	
+
+
+数据库设计的基本步骤
+	需求分析阶段
+	概念结构设计阶段
+		E-R模型
+			实体entity
+			属性attribute
+			码key
+		实体间的联系
+			1:1
+			1:N
+			M:N
+			 
