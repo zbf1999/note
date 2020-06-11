@@ -99,14 +99,21 @@ conda操作
         lst.sort()   排序  lst.sort(reverse=True)
         sorted() / list(reverse(lst2))只排序，不改变原序列
         将列表转换为字符串    "".join(lst)
+        .pop 
+        .count(x)
+        .reverse
     #元组
+        元组的本质修改其实是改变了数据结构，而不是元素结构
         元素不能修改
         t = (1,2)/tuple([1,23])
+        del(t)
+        元组可以作为字典的键，但列表不可以
+        c = zip(a,b)    #打包为元组的列表
     #字典
         d = {}    映射   键值
         d['name']  查询字典name的值
         del d['city'] d.pop  d.popitem()  删除
-        d.setdefault('name','zw')  d['b'] = 'hello'    d.uodate 插入
+        d.setdefault('name','zw')  d['b'] = 'hello'    d.uodate 插入    d.update({"a":'1'})
     集合
         s.add()    添加
         无序
@@ -243,7 +250,10 @@ while
         if s == "python":
             print("your lang is {0}".format(s))
             break
-    
+    一旦break语句被执行，将使得整个循环提前结束
+    continue语句的作用是终止当前循环，并忽略continue之后的语句，然后回到循环
+    的顶端，提前进入下一次循环
+
 类
     描述所创建的对象共同的属性和方法
     面向对象的程序设计将计算机中的程序视为一组对象的集合，每个对象都可以接受其他对象传递额信息并进行处理
@@ -279,6 +289,13 @@ while
 
     使用@staticmethod
     静态方法不与实例绑定
+
+    不论return语句出现在函数的什么位置，一旦得到执行将直接结束函数的执行
+    lambda表达式
+        f = lambda a,b:a+b 
+        f(1,2)
+        f = lambda a,b=2:a+b
+        
     
 继承
     class C(P):

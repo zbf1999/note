@@ -5,7 +5,7 @@ def log(func):
         return res
     return wrapper
 
-#@log
+@log
 def func():
     print('this is a function')
 

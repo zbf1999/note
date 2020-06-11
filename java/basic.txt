@@ -198,5 +198,90 @@ mooc
     数据类型[] 数组名称
 
 javaweb
-    小工具
-        
+    javaee平台 - web进阶核心知识
+    part 1:数据库应用与JDBC
+        mysql  sql  jdbc  三层架构  连接池
+    Part 2:页面设计
+        html  css 
+    Part 3:服务器开发
+        servlet  tomcat  filter  jsp  mvc
+    Part 4: 动态脚本 + 项目实战
+        js ajax jquery  bootstrap  myshop项目
+
+    mysql
+        show databases;     显示当前Mysql中包含的所有数据库
+                            
+        information_schema  信息数据库，其中保存着关于所有数据库的信息
+                            元数据是关于数据的数据，如数据库名或表名，列的数据类型，或访问权限等
+        mysql 核心数据库，主要负责存储数据库的用户、权限设置、关键字等，
+            以及需要使用的控制和管理信息，不可以删除
+        performance_schema      性能优化的数据库
+        Syst        系统数据库
+
+
+        create database if not exists mydb4;     #如果mydb4数据库不存在，则创建
+        create database mydb1 character set gbk;    #创建数据库并设置编码格式为gbk
+
+        show create database cd_dgdfriend;      查看创建数据库时的基本信息
+        alter database mydb1 character set gbk  修改数据库
+
+        drop database mydb1;        删除数据库
+
+
+        数据查询
+            7.1数据库表的基本结构
+                关系结构数据库是以表格进行数据存储，表格由“行”和“列”组成
+                    执行查询语句返回的结果集是一张虚拟表
+
+            7.2基本查询
+                select 列名 from 表名
+                查询结果去重
+                    distinct 列名
+                        select distinct 成绩
+                排序
+                    asc 对前面排序列做升序排序
+                    desc 对前面排序列做降序排序
+                        order by 成绩 desc;
+
+                模糊查询
+                    like _ (单个任意字符)
+                    like % (任意长度的任意字符)
+                
+                分支结构查询
+                    case
+                        when 条件1 then 结果1
+                        when 条件2 then 结果2
+                        else 结果
+                    end 
+
+            7.5 时间查询
+                select sysdate();   查询当前时间  2020-06-11 21:26:22
+                select now();       查询当前时间  2020-06-11 21:26:22
+                select curdate();   2020-06-11
+                select curtime();   21:28:33
+
+            7.6字符串查询
+                select concat('My', 'S', 'QL');     拼接内容
+                select insert('这是一个数据库', 3, 2, 'MySql');     结果为 这是MySql数据库
+                select lower('MYSQL');  指定内容转换为小写
+                select UPPER('mysql');
+                select substring('JavaMySQLOracle', 5,5);   截取MySQL
+                
+            7.7having过滤规则    过滤规则定义对分组后的数据进行过滤
+
+            7.8 限定查询
+                select * from 成绩表 limit 0, 5;
+            
+            select - from - where - group by - having - order by - limit
+
+            7.12 子查询
+                作为一张表
+                    select a,b,c 
+                    from(select d, from e order by d )as temp
+                子查询作为临时表，为其赋予一个临时表名
+
+            7.13 合并查询 
+                select * from a union sclect * from b       去除重复记录
+                select * from a union all select * from b   不去除重复记录
+
+            

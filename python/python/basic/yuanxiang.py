@@ -1,7 +1,7 @@
 import requests
 import base64
 
-from aip import AipImageProcess
+from AIP import AipImageProcess
 
 """ 你的 APPID AK SK """
 APP_ID = '19813096'
@@ -37,7 +37,7 @@ def get_access_token():
 
 def img2Cartoon(img):
     url = "https://aip.baidubce.com/rest/2.0/image-process/v1/selfie_anime"
-    origin_im = open('D:/Desktop/9.jpg', 'rb')
+    origin_im = open('D:/Desktop/1.jpg', 'rb')
     img = base64.b64encode(origin_im .read())
     origin_im.close()
     headers = {'content-type':'application/x-www-form-urlencoded'}

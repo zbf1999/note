@@ -1,6 +1,6 @@
 import random
 
-num = random.randint(100)
+num = random.randint(1,100)
 i = 0
 while i == 0: 
     user = input("请猜测：")

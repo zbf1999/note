@@ -3,3 +3,31 @@
     
 字符数据与字符串
     
+struct Student{
+    char cName[20];
+    float fScore[3];
+}student={"as", 98.4f, 34.2f, 92.2f};
+
+数据结构是值数据对象以及其中的相互关系和构造方法
+
+链表
+struct Student{
+    char cName[20];
+    int iNumber;
+    struct Student* pNext;
+};
+
+插入
+struct Student* Insert(struct Student* pHead){
+    struct Student* pNew;       /*指向新分配的空间*/
+    print("----Insert member at first----\n");      /*提示信息*/
+    pNew = (struct Student*)malloc(sizeof(struct Student));     /*分配内存空间， 并返回指向该内存空间的指针*/
+
+    scanf("%s", &pNew->cName);
+    scanf("%d", &pNew->iNumber);
+
+    pNew->pNext = pHead;        /*新节点指针指向原来的首地址*/
+    pHead = pNew;               /*头指针指向头节点*/
+    iCount++;
+    return pHead;
+}
