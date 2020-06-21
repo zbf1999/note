@@ -284,4 +284,38 @@ javaweb
                 select * from a union sclect * from b       去除重复记录
                 select * from a union all select * from b   不去除重复记录
 
-            
+包装类
+    byte-Byte
+    short-Short
+    int-Integer
+    long-Long 
+    float-Float 
+    double-Double 
+    char-Character 
+    boolean-Boolean 
+    装箱： 将基本数据类型转换为包装类，成为装箱
+    拆箱： 相反
+
+其他类
+    Date 
+        java.util.Date表示日期
+        java底层使用long类型标识日期
+        long类型的值表示的是当前时间的毫秒值
+        这个毫秒值是基于1970-1-1 0-0-0 的差值，这个时间被认为是计算机的起始时间
+
+枚举
+    本质上就是一个类，是自定义的数据类型
+    用来限制可能的取值个数
+    降低出错的几率
+    提高代码可读性
+    用法
+        使用enum关键字
+        public enum 名字
+        枚举类型中可以包含属性、方法、构造方法等
+        构造方法必须是私有的，不允许在外部创建对象
+
+泛型
+    Generic Type泛型本质是参数化类型，所操作的数据类型被指定为一个参数，在使用时确定此类型。
+    泛型类
+    泛型接口
+    泛型方法
