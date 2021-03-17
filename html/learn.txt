@@ -1,0 +1,5 @@
+btn = document.getElementById("btn")
+btn.addEventListener("mouseover", demo1)
+function demo1() {
+	alert(event.type)
+}
