@@ -66,3 +66,11 @@ js浏览器对象
 			函数体
 			window.People = People
 		}())
+
+定时器管理、函数封装
+	parseInt()
+		parseInt("30px") -- 30
+		
+
+web测试
+	
