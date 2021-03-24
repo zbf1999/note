@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #div1 {
+            width: 100px;
+            height: 100px;
+            background: pink;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+<input id="btn1" type="button" value="前进">
+<input id="btn2" type="button" value="后退">
+<div id="div1"></div>
+<script>
+
+    const oDiv = document.getElementById("div1");
+    const oBtn1 = document.getElementById("btn1");
+    const oBtn2 = document.getElementById("btn2");
+    oDiv.timer = null;
+
+    oBtn1.onclick = function () {
+        doMove(oDiv, "top", -10, 50)
+    }
+
+    oBtn2.onclick = function () {
+        doMove(oDiv, "top", 10, 500)
+    }
+
+    function doMove(obj, attr, number, target) {
+        clearInterval(oDiv.timer)
+        oDiv.timer = setInterval(function () {
+            let speed = parseInt(getStyle(oDiv, attr)) + number;
+            if (number>0 && speed > target || number<0 && speed < target){
+                speed = target
+            }
+
+            oDiv.style[attr] = speed + "px"
+
+            if (speed===target) {
+                clearInterval(oDiv.timer)
+            }
+        }, 30)
+    }
+
+    function getStyle(obj, attr) {
+        return obj.currentStyle?obj.currentStyle : getComputedStyle(obj, null)[attr]
+    }
+
+</script>
+</body>
+</html>
