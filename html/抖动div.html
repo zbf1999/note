@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>抖动div</title>
+    <style>
+        img {
+            position: absolute;
+            top: 200px;
+            left: 50px;
+            width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<img id="img1" src="../images/2.jpg" alt="熊">
+<script>
+    onload = function () {
+        const oDiv = document.getElementById("img1")
+
+
+
+        oDiv.onclick = function () {
+            let pos = parseInt(getStyle(oDiv, "left"))
+
+            let arr = []
+            let num = 0
+            let timer = null
+            for (let i = 20; i > 0;i-=2) {
+                arr.push(i, -i);
+            }
+            arr.push(0)
+
+            clearInterval(timer)
+            timer = setInterval(function () {
+                oDiv.style.left = pos + arr[num] + "px"
+                console.log(pos)
+                num++
+                if (num === arr.length) {
+                    clearInterval(timer)
+                }
+            }, 50)
+        }
+
+
+        function getStyle(obj, attr) {
+            return obj.currentStyle? obj.currentStyle : getComputedStyle(obj, null)[attr]
+        }
+    }
+</script>
+</body>
+</html>
