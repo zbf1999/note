@@ -3,7 +3,7 @@
 import os #1、利用import语句进行导入模块，用逗号分隔可以导入多个包
 import math,copy,random,time
 from collections import Counter  #2、利用from...import ....进行导入
-import numpy as np  #3、利用as关键字重命名包名，以后再使用就可以直接用np了
+# import numpy as np  #3、利用as关键字重命名包名，以后再使用就可以直接用np了
 
 def hello_world():  #4、利用def关键字创建函数，简单来说：函数就是将具有独立功能的代码块组织成一个模块，需要的时候调用
 	#创建函数格式：def name(参数1，参数2....):
