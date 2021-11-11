@@ -68,6 +68,7 @@
     - bilibili.
 ---
 #haddop.
+public
 
 ---
 #hbase.
