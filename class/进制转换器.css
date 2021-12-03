@@ -1,0 +1,17 @@
+/*head的css*/
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin:7rem auto;
+    border:1px solid #06f;
+    width:48%;height:350px;
+}
+.header{text-align: center;background-color: #06a;line-height: 1rem;width: 100%;}
+.radio{font-weight: 300;font-size: 13px;}
+.tool_content ul li{width:80px;height:30px;display:inline-block;}
+.tool_content a{outline: none;}
+
+.content_area{margin:20px 0 0 0;font-size: 13px;}
+
+.input-group{margin-left: 2rem;}
