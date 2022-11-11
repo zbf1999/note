@@ -1,0 +1,4 @@
+/* pages/examService/create/create.wxss */
+page {
+  background-color: #F6FAFF;
+}

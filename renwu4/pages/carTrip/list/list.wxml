@@ -1,0 +1,79 @@
+<!--pages/carTrip/list/list.wxml-->
+<view class="ct-container">
+  <view class="ct-select">
+
+    <view class="ct-select__item" data-key="areaList">
+      <view class="ct-select__item-title">{{areaName}}</view>
+      <view class="ct-select__item-column"></view>
+    </view>
+
+    <view class="ct-select__item" data-key="timeList" bindtap="showTime">
+      <block wx:if="{{selectTime}}">
+        <view class="ct-select__item-title2">{{timeName}}</view>
+        <view class="ct-select__item-column2"></view>
+      </block>
+      <block wx:else>
+        <view class="ct-select__item-title">{{timeName}}</view>
+        <view class="ct-select__item-column"></view>
+      </block>
+    </view>
+  </view>
+
+  <view class="ct-select2" wx:if="{{selectTime}}">
+    <block wx:for="{{times}}">
+      <view class="timeitem" bindtap="selectTime" data-time="{{item.myvalue}}" data-index="{{index}}">
+        <text>{{item.mytext}}</text>
+        <view class="se" wx:if="{{item.myxuan}}">
+          <image src="/images/index/selected.png"></image>
+        </view>
+        <view class="se2" wx:else>
+        </view>
+      </view>
+    </block>
+    <view class="timeitem">
+      <view class="clear" bindtap="hideTimeClear">
+        <text>清空条件</text>
+      </view>
+      <view class="ok" bindtap="hideTimeOK">
+        <text>确认</text>
+      </view>
+    </view>
+    
+  </view>
+  
+  <view class="ct-list">
+    <view class="ct-list__tip">已收藏{{lineCount}}条线路</view>
+    <scroll-view class="scrV" scroll-y="true">
+      <view class="ct-list__item" wx:for="{{lineList}}" wx:key="id" data-url="{{'/pages/carTrip/detail/detail?busNo=' + item.busNo}}" catchtap="goDetail">
+      <view class="ct-list__item-top">
+        <image class="ct-list__item-car" src="../../../images/index/ct-car.png" mode="aspectFit"></image>
+        <view class="ct-list__item-title ct-list__title-mt">{{item.busNo}}</view>
+        <view class="ct-list__item-title">{{item.startTime}}</view>
+        <view class="ct-list__item-collect {{item.favorite === 1 ? 'ct-list__item-collected' : ''}}" catchtap="collectHandle" data-busNo="{{item.busNo}}" data-favorite="{{item.favorite}}">
+          <image src="{{'../../../images/index/collect' + (item.favorite === 1 ? 'ed' : '') + '.png'}}" mode="aspectFit"></image>
+          {{item.favorite === 1 ? '已收藏' : '收藏'}}
+        </view>
+        <view class="ct-list__item-fill"></view>
+        <image class="ct-list__item-left" src="../../../images/index/small_left.png" mode="aspectFit"></image>
+      </view>
+
+      <view class="ct-list__item-bottom">
+        <view class="ct-list__item-area">
+          <view class="ct-list__item-start">
+            <view class="shi">始</view>
+          </view>
+          <view class="ct-list__item-area-title">{{item.startStation}}</view>
+        </view>
+        <view class="ct-list__item-line"></view>
+        <view class="ct-list__item-area ct-list__item-area-two">
+          <view class="ct-list__item-end">
+            <view class="zhong">终</view>
+          </view>
+          <view class="ct-list__item-area-title">{{item.endStation}}</view>
+        </view>
+      </view>
+    </view>
+    </scroll-view>
+    
+  </view>
+</view>

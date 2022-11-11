@@ -1,0 +1,16 @@
+{
+  "name": "wisdom_education_miniprogram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "@miniprogram-component-plus/tabs": "^1.0.0",
+    "miniprogram-api-promise": "^1.0.4",
+    "weapp-cookie": "^1.4.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.code.oa.com/guanjia-innovation/wisdom-education.git"
+  },
+  "author": "xinyuedeng"
+}

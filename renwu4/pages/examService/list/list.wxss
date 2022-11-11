@@ -1,0 +1,256 @@
+/* pages/examService/list/list.wxss */
+page {
+  background-color: #F6FAFF;
+  padding: 32rpx;
+  box-sizing: border-box;
+}
+
+.es-tabs {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.es-tabs__item {
+  flex-shrink: 0;
+  font-size: 32rpx;
+  position: relative;
+  color: #989898;
+  height: 44rpx;
+  line-height: 44rpx;
+  margin-right: 40rpx;
+}
+
+.es-tabs__item view {
+  height: 8rpx;
+  width: 100%;
+  background: transparent;
+  position: absolute;
+  bottom: 4rpx;
+}
+
+.es-tabs__item-actived {
+  color: #000000;
+  font-weight: 500;
+}
+
+.es-tabs__item-actived view {
+  background: rgba(44, 112, 2478, 0.8);
+}
+
+.es-search {
+  width: 686rpx;
+  height: 80rpx;
+  position: relative;
+  margin-top: 32rpx;
+  display: flex;
+}
+
+.es-search input {
+  width: 582rpx;
+  height: 80rpx;
+  background: #fff;
+  font-size: 28rpx;
+  padding-left: 32rpx;
+  box-sizing: border-box;
+  border-top-left-radius: 40rpx;
+  border-bottom-left-radius: 40rpx;
+}
+
+.es-search view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80rpx;
+  width: 104rpx;
+  border-top-right-radius: 40rpx;
+  border-bottom-right-radius: 40rpx;
+  background: #fff;
+}
+
+.es-search image {
+  height: 40rpx;
+  width: 40rpx;
+}
+
+.es-list__title {
+  font-size: 32rpx;
+  color: #000000;
+  font-weight: 500;
+  height: 44rpx;
+  line-height: 44rpx;
+  margin-top: 48rpx;
+  margin-bottom: 32rpx;
+}
+
+.es-list__item {
+  width: 686rpx;
+  height: 300rpx;
+  background: #FFFFFF;
+  border-radius: 16rpx;
+  padding: 32rpx;
+  box-sizing: border-box;
+  margin-bottom: 24rpx;
+  position: relative;
+}
+
+.es-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.es-list__item-del {
+  font-size: 20rpx;
+  height: 32rpx;
+  width: 32rpx;
+  line-height: 32rpx;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #FF493A;
+  color: #fff;
+  border-radius: 16rpx;
+}
+
+.es-list__item-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24rpx;
+}
+
+.es-list__item-title-left {
+  width: 128rpx;
+  height: 44rpx;
+  font-family: PingFangSC-Medium;
+  font-size: 32rpx;
+  color: #000000;
+  flex: 1;
+}
+
+.es-list__item-title-left-gray {
+  color: #989898;
+}
+
+
+.es-list__item-title-right {
+  width: 96rpx;
+  height: 44rpx;
+  background: #E5EFFF;
+  border-radius: 8rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #2C70F8;
+  line-height: 44rpx;
+  text-align: center;
+}
+
+.es-list__item-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24rpx;
+}
+
+.es-list__item-line:last-child {
+  margin-bottom: 0;
+}
+
+.es-list__item-line-left {
+  height: 40rpx;
+  font-size: 28rpx;
+  color: #989898;
+  line-height: 40rpx;
+  display: flex;
+  align-items: center;
+}
+
+.es-list__item-line-left image {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 4rpx;
+}
+
+.es-list__item-line-right {
+  height: 40rpx;
+  font-size: 28rpx;
+  color: #989898;
+  text-align: right;
+  line-height: 40rpx;
+  flex: 1;
+}
+
+.es-add {
+  width: 84rpx;
+  height: 84rpx;
+  background: #FF9D51;
+  box-shadow: 0 3px 8px 0 rgba(255, 212, 141, 0.89);
+  border-radius: 24rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 226rpx;
+  right: 32rpx;
+}
+
+.es-add image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.es-grade {
+  width: 686rpx;
+  background: #FFFFFF;
+  border-radius: 32rpx;
+  margin-top: 84rpx;
+  padding: 76rpx 32rpx 32rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.es-grade__title {
+  width: 426rpx;
+  height: 80rpx;
+  background: #E5EFFF;
+  border-radius: 45rpx;
+  font-size: 28rpx;
+  color: #2C70F8;
+  font-weight: 500;
+  text-align: center;
+  line-height: 80rpx;
+  position: absolute;
+  top: -40rpx;
+  left: 138rpx;
+}
+
+.es-grade__table-header,
+.es-grade__table-body {
+  display: flex;
+  font-size: 28rpx;
+  color: #989898;
+}
+
+.es-grade__table-header view,
+.es-grade__table-body view {
+  height: 72rpx;
+  line-height: 72rpx;
+}
+
+.es-grade__table-body view {
+  color: #000000;
+}
+
+.es-grade__table-one {
+  width: 426rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.es-grade__table-two {
+  width: 130rpx;
+  text-align: center;
+}
+
+.es-grade__table-three {
+  width: 130rpx;
+  text-align: right;
+}

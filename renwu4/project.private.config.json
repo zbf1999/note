@@ -1,0 +1,50 @@
+{
+  "setting": {
+    "compileHotReLoad": true
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "登录页",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "注册",
+          "pathName": "pages/register/register",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "个人中心",
+          "pathName": "pages/home/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "校车出行",
+          "pathName": "pages/carTrip/list/list",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "考试安排",
+          "pathName": "pages/examService/list/list",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "新增考试",
+          "pathName": "pages/examService/create/create",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "projectname": "renwu4",
+  "libVersion": "2.27.1"
+}

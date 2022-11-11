@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/个人中心/编辑信息</title>
+    <g id="icon/个人中心/编辑信息" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polyline id="路径" stroke="#FFFFFF" points="11.5 5 11.5 11.5 0.5 11.5 0.5 0.5 8 0.5"></polyline>
+        <polygon id="矩形" fill="#FFFFFF" points="11.1111111 0 12 0.888888889 4.88888889 8 4 7.11111111"></polygon>
+    </g>
+</svg>

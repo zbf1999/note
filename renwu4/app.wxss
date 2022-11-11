@@ -1,0 +1,124 @@
+/**app.wxss**/
+.mask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #b9b9b9;
+  z-index: -10;
+  opacity: 0.17;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100rpx 0;
+  box-sizing: border-box;
+}
+
+.form-wrap {
+  width: 600rpx;
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+}
+
+.form-wrap .input-view {
+  display: flex;
+  flex-direction: row;
+  height: 72rpx;
+  line-height: 72rpx;
+  padding: 0 20rpx;
+  margin-bottom: 50rpx;
+  align-items: center;
+  border: 1px solid #dcdee0;
+  font-size: 24rpx;
+}
+
+.form-wrap .input-placeholder {
+  color: #ccc;
+}
+
+.form-wrap .input-view .img {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 20rpx;
+}
+
+.form-wrap .input-view .input-wrap {
+  flex: 1;
+  height: 72rpx;
+  line-height: 72rpx;
+}
+
+.form-input-wrap {
+  display: flex;
+  flex-direction: column;
+  height: 140rpx;
+  /* margin-bottom: 30rpx; */
+}
+
+.form-input-wrap .input-view {
+  margin-bottom: 16rpx;
+}
+
+.form-input-wrap .input-tooltip {
+  height: 32rpx;
+  line-height: 32rpx;
+  font-size: 24rpx;
+  color: #e02020;
+}
+
+.confirm-btn-warp button {
+  width: 100% !important;
+  background-color: #2c70f8;
+  border-radius: 0 !important;
+}
+
+.confirm-btn {
+  color: #fff;
+  font-size: 28rpx;
+  font-weight: 500;
+  letter-spacing: 3rpx;
+}
+
+.confirm-btn_hover {
+  opacity: 0.8;
+}
+
+.confirm-btn[disabled] {
+  background-color: #dcdee0 !important;
+  color: #a5a6a8 !important;
+}
+
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+}
+
+.flex-col-center .result-title {
+  font-size: 36rpx;
+}
+
+.flex-col-center .result-tooltip {
+  margin-top: 40rpx;
+}
+
+.navigator_hover,
+.hover {
+  background-color: transparent;
+  opacity: 0.8;
+}
+
+ .empty-tooltip {
+  text-align: center;
+  font-size: 14px;
+  color: #ccc;
+}

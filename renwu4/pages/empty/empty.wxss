@@ -1,0 +1,23 @@
+/* pages/empty/empty.wxss */
+page {
+  background-color: #F6FAFF;
+}
+
+.empty {
+  display: flex;
+  padding-top: 168rpx;
+  flex-direction: column;
+  align-items: center;
+}
+
+.empty__img {
+  height: 200rpx;
+  width: 308rpx;
+}
+
+.empty_title {
+  margin-top: 48rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #4c4c4c;
+}

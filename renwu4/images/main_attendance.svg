@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="53px" viewBox="0 0 54 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/首页/智能考勤</title>
+    <defs>
+        <linearGradient x1="0%" y1="44.1874337%" x2="100%" y2="44.1874337%" id="linearGradient-1">
+            <stop stop-color="#2870FF" offset="0%"></stop>
+            <stop stop-color="#368CFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#368DFF" offset="0%"></stop>
+            <stop stop-color="#2870FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#4A98FF" offset="0%"></stop>
+            <stop stop-color="#2870FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="icon/首页/智能考勤" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-3">
+            <path d="M53.75,15.25 L53.75,50 C53.75,50.7593915 53.4421958,51.4468915 52.9445436,51.9445436 C52.4468915,52.4421958 51.7593915,52.75 51,52.75 L51,52.75 L3,52.75 C2.24060847,52.75 1.55310847,52.4421958 1.05545635,51.9445436 C0.557804234,51.4468915 0.25,50.7593915 0.25,50 L0.25,50 L0.25,15.25 L53.75,15.25 Z" id="矩形" stroke="url(#linearGradient-1)" stroke-width="0.5" fill="#FFFFFF"></path>
+            <path d="M3,4 L51,4 C52.6568542,4 54,5.34314575 54,7 L54,16 L54,16 L0,16 L0,7 C-2.02906125e-16,5.34314575 1.34314575,4 3,4 Z" id="矩形备份" fill="url(#linearGradient-2)"></path>
+            <rect id="矩形" fill="#0269F4" x="7" y="0" width="4" height="9"></rect>
+            <rect id="矩形备份-4" fill="#006DFF" x="43" y="0" width="4" height="9"></rect>
+            <path d="M16.939279,31.274404 L13,34.5552681 C19.5885814,42.0422322 22.8828721,45.7857143 22.8828721,45.7857143 C22.8828721,45.7857143 33.9243767,29.8851269 43,25.0203211 L41.1178191,22.2142857 C41.1178191,22.2142857 29.4856136,29.7940257 22.8828721,37.162125 L16.939279,31.274404 Z" id="路径" fill="url(#linearGradient-3)"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/登录/手机号码</title>
+    <g id="icon/登录/手机号码" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" stroke="#000000" x="2.5" y="0.5" width="11" height="15"></rect>
+        <circle id="椭圆形备份" stroke="#000000" cx="8" cy="12.5" r="1"></circle>
+        <line x1="5" y1="3.5" x2="11" y2="3.5" id="路径-3" stroke="#000000"></line>
+    </g>
+</svg>

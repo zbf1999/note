@@ -1,0 +1,5 @@
+<!--pages/empty/empty.wxml-->
+<view class="empty">
+  <image class="empty__img" src="../../images/index/empty-no.png" mode="aspectFit"></image>
+  <view class="empty_title">{{desc}}</view>
+</view>

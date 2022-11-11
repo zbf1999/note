@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/个人中心/说明/蓝</title>
+    <g id="icon/个人中心/说明/蓝" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M10.7071068,-3.55271368e-15 L1,-3.55271368e-15 L1,16 L15,16 L15,4.29289322 L10.7071068,-3.55271368e-15 Z M10.292,0.999 L13.999,4.706 L13.999,14.999 L1.999,14.999 L1.999,0.999 L10.292,0.999 Z" id="路径" fill="#2D71F8" fill-rule="nonzero"></path>
+        <polygon id="矩形备份-3" fill="#2D71F8" points="4 8 12 8 12 9 4 9"></polygon>
+        <polygon id="矩形备份-5" fill="#2D71F8" points="4 4 9 4 9 5 4 5"></polygon>
+        <polygon id="矩形备份-4" fill="#2D71F8" points="4 12 12 12 12 13 4 13"></polygon>
+        <polygon id="路径-12" fill="#2D71F8" fill-rule="nonzero" points="11 0.5 10.999 4 14.5 4 14.5 5 10 5 10 0.5"></polygon>
+    </g>
+</svg>

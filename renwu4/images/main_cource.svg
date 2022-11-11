@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="53px" viewBox="0 0 54 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/首页/课程管理</title>
+    <defs>
+        <linearGradient x1="0%" y1="44.1874337%" x2="100%" y2="44.1874337%" id="linearGradient-1">
+            <stop stop-color="#2870FF" offset="0%"></stop>
+            <stop stop-color="#368CFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#368DFF" offset="0%"></stop>
+            <stop stop-color="#2870FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#4A98FF" offset="0%"></stop>
+            <stop stop-color="#2870FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="icon/首页/课程管理" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-2">
+            <path d="M53.75,13.25 L53.75,51 C53.75,51.4832492 53.5541246,51.9207492 53.2374369,52.2374369 C52.9207492,52.5541246 52.4832492,52.75 52,52.75 L52,52.75 L2,52.75 C1.51675084,52.75 1.07925084,52.5541246 0.762563133,52.2374369 C0.445875422,51.9207492 0.25,51.4832492 0.25,51 L0.25,51 L0.25,13.25 L53.75,13.25 Z" id="矩形" stroke="url(#linearGradient-1)" stroke-width="0.5" fill="#FFFFFF"></path>
+            <path d="M3,4 L51,4 C52.6568542,4 54,5.34314575 54,7 L54,14 L54,14 L0,14 L0,7 C-2.02906125e-16,5.34314575 1.34314575,4 3,4 Z" id="矩形备份" fill="url(#linearGradient-2)"></path>
+            <rect id="矩形" fill="#0269F4" x="7" y="0" width="4" height="8"></rect>
+            <rect id="矩形备份-4" fill="#006DFF" x="43" y="0" width="4" height="8"></rect>
+            <path d="M13,41 L13,47 L5,47 L5,41 L13,41 Z M25,41 L25,47 L17,47 L17,41 L25,41 Z M37,41 L37,47 L29,47 L29,41 L37,41 Z M49,41 L49,47 L41,47 L41,41 L49,41 Z M13,30 L13,36 L5,36 L5,30 L13,30 Z M25,30 L25,36 L17,36 L17,30 L25,30 Z M37,30 L37,36 L29,36 L29,30 L37,30 Z M49,30 L49,36 L41,36 L41,30 L49,30 Z M13,19 L13,25 L5,25 L5,19 L13,19 Z M25,19 L25,25 L17,25 L17,19 L25,19 Z M37,19 L37,25 L29,25 L29,19 L37,19 Z M49,19 L49,25 L41,25 L41,19 L49,19 Z" id="形状结合" fill="#DEE8FF"></path>
+            <rect id="矩形" fill="url(#linearGradient-3)" x="29" y="19" width="8" height="6"></rect>
+            <rect id="矩形备份-16" fill="url(#linearGradient-3)" x="17" y="30" width="8" height="6"></rect>
+            <path d="M31.1677623,21.5374746 L30.5,22.0942273 C31.6168557,23.3647424 32.1752836,24 32.1752836,24 C32.1752836,24 34.0469714,21.3017185 35.5854151,20.4761757 L35.2663594,20 C35.2663594,20 33.2945396,21.2862589 32.1752836,22.536603 L31.1677623,21.5374746 Z" id="路径" fill="#FFFFFF" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

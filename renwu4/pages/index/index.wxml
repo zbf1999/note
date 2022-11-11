@@ -1,0 +1,29 @@
+<!-- index.wxml -->
+<view class='tabar' style="{{isLowVersion? 'position:absolute;top:' + (logined ? 0: 16) + 'rpx;z-index:100' : 'padding-top:' + (barHeight + 8.5) + 'px'}}">
+  <image class="tabar-img" src="../../images/home.svg" mode="aspectFit" bindtap="bindHomeTap"></image>
+  <view wx:if="{{!isLowVersion}}">智慧教育</view>
+</view>
+
+<view class="tiShi" wx:if="{{!logined}}">
+  <icon type="warn" size="20" color="#f87e0c"></icon>
+  <text>当前暂未登录!登录后可体验完整功能</text>
+  <navigator url="/pages/login/login" style="color: blue;">立即登录</navigator>
+</view>
+
+<view class="container" style="position:relative">
+  <view style="margin-top: -40rpx" class="module-container">
+    <view class="module-content" wx:for="{{list}}" wx:for-item="item" wx:key="key" data-url="{{item.url}}" bindtap="bindModuleTap">
+      <image class="module-img" src="{{ '../../images/index/' + item.key + '.png' }}" mode="aspectFit"></image>
+      <view class="desc-title">{{item.title}}</view>
+    </view>
+  </view>
+  <!-- 未登录时，点击进入模块时toast提示 -->
+  <LoginToast visible="{{loginToastShow}}" showCancel="{{true}}" showConfirm="{{true}}" bindconfirm="denglu">
+    <view class="shang">
+      <text>当前账户未登录,请先登录</text>
+    </view>
+    <view class="xia">
+      <text>登录后可体验完整功能</text>
+    </view>
+  </LoginToast>
+</view>

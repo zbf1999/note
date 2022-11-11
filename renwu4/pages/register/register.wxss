@@ -1,0 +1,7 @@
+.confirm-btn-warp {
+  margin-top: 60rpx;
+}
+
+ .result-tooltip {
+  margin-top: 10rpx;
+}

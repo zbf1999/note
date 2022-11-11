@@ -1,0 +1,32 @@
+/* pages/moduleList/moduleList.wxss */
+page {
+  background-color: #F6FAFF;
+}
+.ml {
+  padding: 32rpx;
+}
+.ml-item {
+  height: 112rpx;
+  display: flex;
+  padding: 0 32rpx;
+  align-items: center;
+  background: #fff;
+  margin-top: 20rpx;
+}
+
+.ml-item__img {
+  height: 48rpx;
+  width: 48rpx;
+}
+
+.ml-item__title {
+  flex: 1;
+  font-size: 28rpx;
+  color: #000;
+  padding-left: 24rpx;
+}
+
+.ml-item_left {
+  height: 24rpx;
+  width: 24rpx;
+}

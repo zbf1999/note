@@ -1,0 +1,42 @@
+<view class="mask"></view>
+<view class="home-container">
+  <view class="header-container" style="background-color:{{ logined? '#2C70F8' :'#A7C0F1' }}">
+    <view class="header-content">
+      <image class="header-avatar" src="../../../images/{{logined? 'logined' :'unlogin'}}_avatar.png" mode="aspectFit"></image>
+      <view class="header-info" wx:if="{{logined}}">
+        <view class="header-info-item">{{userInfo.name}}</view>
+        <view class="header-info-item">
+          电话：{{userInfo.phone}}
+          <image class="header-info-edit" src="../../../images/edit.svg" bindtap="bindEditPhone"></image>
+        </view>
+        <view class="header-info-item">学号：{{userInfo.studentID}}</view>
+      </view>
+      <view wx:else class="header-info">
+        <view class="header-info-login">
+          <navigator url="/pages/login/login" open-type="navigate">登录/注册</navigator>
+        </view>
+        <view class="header-info-item">登录可体验完整功能</view>
+      </view>
+    </view>
+  </view>
+  <view class="module-container">
+    <view class="module-content">
+      <view class="module-item" hover-class="module-item_hover hover" wx:for="{{list}}" wx:for-item="item" wx:key="key" data-url="{{item.url}}" data-key="{{item.key}}" bindtap="bindGoTo">
+        <view class="module-item-left">
+          <image class="module-icon" src="../../../images/home_{{item.key}}_{{logined?'blue':'grey'}}.svg" mode="scaleToFill"></image>
+          <view style="font-size:32rpx">{{item.title}}</view>
+        </view>
+        <image class="module-goto" src="../../../images/goto.svg" mode="scaleToFill"></image>
+      </view>
+    </view>
+    <view wx:if="{{logined}}" class="loginout_btn" hover-class="hover" bindtap="showLoginoutConfirm">
+      退出登录
+    </view>
+  </view>
+</view>
+<!-- 登出提示 -->
+<Modal visible="{{loginoutConfirm}}" showCancel="{{true}}" showConfirm="{{true}}" bindconfirm="bindLoginout">
+  <view style="font-size:36rpx">是否确定退出登录？</view>
+</Modal>
+<!-- 登录提示 -->
+<LoginToast visible="{{loginToast}}"></LoginToast>

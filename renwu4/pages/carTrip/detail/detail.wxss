@@ -1,0 +1,81 @@
+/* pages/carTrip/detail/detail.wxss */
+image {
+  height: 45rpx;
+  width: 45rpx;
+  margin-right: 12rpx;
+  margin-top: 9rpx;
+}
+
+.first {
+  display: flex;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+
+.tip {
+  color: gray;
+  font-size: 30rpx;
+}
+
+.scrV {
+  height: 1100rpx;
+  margin-left: 30rpx;
+}
+
+.block {
+  display: flex;
+  height: 300rpx;
+}
+
+.line1 {
+  width: 3rpx;
+
+  background-color: #397de4;
+  position: relative;
+  left: 30rpx;
+  top: 12rpx;
+  z-index: -1;
+}
+
+.dot1 {
+  height: 30rpx;
+  width: 30rpx;
+  border-radius: 20rpx;
+  background-color: blue;
+  margin-left: 15rpx;
+  margin-right: 30rpx;
+  margin-top: 14rpx;
+}
+
+.zi1 {
+  display: flex;
+}
+
+.name_end {
+  position: relative;
+  bottom: 60rpx;
+}
+
+.qi {
+  display: flex;
+  justify-content: center;
+  background-color: #20e620;
+  border-radius: 10rpx;
+  color: #fff;
+  width: 45rpx;
+  font-size: 33rpx;
+}
+
+.zhong {
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  border-radius: 10rpx;
+  color: #fff;
+  width: 45rpx;
+  font-size: 30rpx;
+}
+
+.qian {
+  font-size: 35rpx;
+}

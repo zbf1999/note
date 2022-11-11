@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/智能考勤/今日签到</title>
+    <g id="icon/智能考勤/今日签到" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="矩形" stroke="#2D71F8" points="0.5 2.5 19.5 2.5 19.5 19.5 0.5 19.5"></polygon>
+        <polygon id="路径" fill="#2D71F8" points="6 13.147814 6.85714286 12.2484386 9.42854464 14.9465649 14.1428571 10 15 10.8993754 14.4508795 11.4755238 14.4553571 11.4802221 9.43303571 16.75"></polygon>
+        <polygon id="直线-2" fill="#2D71F8" fill-rule="nonzero" points="6 0 6 5 5 5 5 8.89913143e-15"></polygon>
+        <polygon id="直线-2备份" fill="#2D71F8" fill-rule="nonzero" points="15 0 15 5 14 5 14 8.89913143e-15"></polygon>
+        <rect id="矩形" fill="#2D71F8" x="1" y="7" width="18" height="1"></rect>
+    </g>
+</svg>

@@ -1,0 +1,8 @@
+<!--pages/moduleList/moduleList.wxml-->
+<view class="ml">
+  <view wx:for="{{list}}" wx:for-item="item" wx:key="key" data-url="{{item.url}}" bindtap="bindModuleTap" class="ml-item">
+    <image class="ml-item__img" src="{{ '../../images/index/small_' + item.key + '.png' }}" mode="aspectFit"></image>
+    <view class="ml-item__title">{{item.title}}</view>
+    <image class="ml-item_left" src="{{ '../../images/index/left.png' }}" mode="aspectFit"></image>
+  </view>
+</view>

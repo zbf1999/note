@@ -1,0 +1,72 @@
+<!--pages/examService/list/list.wxml-->
+<view class="es-tabs">
+  <view class="es-tabs__item {{curTab === 1 ? 'es-tabs__item-actived' : ''}}" bindtap="checkTabHandle" data-tab="1">考试安排
+    <view></view>
+  </view>
+  <view class="es-tabs__item {{curTab === 2 ? 'es-tabs__item-actived' : ''}}" bindtap="checkTabHandle" data-tab="2">我的成绩
+    <view></view>
+  </view>
+</view>
+
+<view class="es-search">
+  <input type="text" placeholder="输入搜索内容" value="{{keyword}}" bindinput="inputHandle" />
+  <view catchtap="searchHandle">
+    <image src="../../../images/index/es-search.png" mode="aspectFit"></image>
+  </view>
+</view>
+
+<view class="es-list" wx:for="{{list}}" wx:key="title" wx:if="{{curTab === 1}}">
+  <view class="es-list__title">{{item.title}}</view>
+  <view>
+    <view class="es-list__item" wx:for="{{item.children}}" wx:for-item="info" wx:key="id">
+      <view wx:if="{{info.etype === 1}}" catchtap="removeExam" data-id="{{info.id}}" class="es-list__item-del">X</view>
+      <view class="es-list__item-title">
+        <view class="es-list__item-title-left {{item.title === '已结束' ? 'es-list__item-title-left-gray' : ''}}">{{info.name}}</view>
+        <view class="es-list__item-title-right" wx:if="{{info.sign}}">{{info.sign}}</view>
+      </view>
+
+      <view class="es-list__item-line">
+        <view class="es-list__item-line-left">
+          <image src="../../../images/index/es-area.png" mode="aspectFit"></image>
+          地址
+        </view>
+        <view class="es-list__item-line-right">{{info.addr}}</view>
+      </view>
+
+      <view class="es-list__item-line">
+        <view class="es-list__item-line-left">
+          <image src="../../../images/index/es-zuowei.png" mode="aspectFit"></image>
+          座位
+        </view>
+        <view class="es-list__item-line-right">{{info.seat}}</view>
+      </view>
+
+      <view class="es-list__item-line">
+        <view class="es-list__item-line-left">
+          <image src="../../../images/index/es-time.png" mode="aspectFit"></image>
+          时间
+        </view>
+        <view class="es-list__item-line-right">{{info.showTime}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view wx:if="{{curTab === 2}}" class="es-grade">
+  <view class="es-grade__title">{{termName}}</view>
+  <view class="es-grade__table-header">
+    <view class="es-grade__table-one">课程</view>
+    <view class="es-grade__table-two">学分</view>
+    <view class="es-grade__table-three">成绩</view>
+  </view>
+
+  <view class="es-grade__table-body" wx:for="{{gradeList}}" wx:key="id">
+    <view class="es-grade__table-one">{{item.name}}</view>
+    <view class="es-grade__table-two">{{item.credit}}</view>
+    <view class="es-grade__table-three">{{item.score || '暂无'}}</view>
+  </view>
+</view>
+
+<view class="es-add" bindtap="goToCreate">
+  <image src="../../../images/index/es-add.png" mode="aspectFit"></image>
+</view>

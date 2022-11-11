@@ -1,0 +1,12 @@
+/* components/toast.wxss */
+
+.flex-col-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-tooltip {
+  margin-top: 10rpx;
+}

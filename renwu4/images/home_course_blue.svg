@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/个人中心/我的选课/蓝</title>
+    <g id="icon/个人中心/我的选课/蓝" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M5,0 L5,4 L4,4 L4,0 L5,0 Z M12,0 L12,4 L11,4 L11,0 L12,0 Z" id="直线-2" fill="#2D71F8" fill-rule="nonzero"></path>
+        <polygon id="矩形" fill="#2D71F8" points="1 6 16 6 16 7 1 7"></polygon>
+        <polygon id="矩形备份" fill="#2D71F8" points="3 9 13 9 13 10 3 10"></polygon>
+        <polygon id="矩形备份-2" fill="#2D71F8" points="3 12 13 12 13 13 3 13"></polygon>
+        <path d="M3,2 L3,3 L1,2.999 L1,15 L15,14.999 L15,2.999 L13,3 L13,2 L16,2 L16,16 L0,16 L0,2 L3,2 Z M10,2 L10,3 L6,3 L6,2 L10,2 Z" id="形状" fill="#2D71F8" fill-rule="nonzero"></path>
+    </g>
+</svg>

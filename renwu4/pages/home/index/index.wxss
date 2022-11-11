@@ -1,0 +1,110 @@
+.header-container {
+  width: 100%;
+  height: 356rpx;
+  border-bottom-left-radius: 15rpx;
+  border-bottom-right-radius: 15rpx;
+}
+
+.header-container .header-content {
+  display: flex;
+  flex-direction: row;
+  padding-top: 68rpx;
+  margin-left: 66rpx;
+}
+
+.header-content .header-avatar {
+  width: 148rpx;
+  height: 148rpx;
+  margin-top: 10rpx;
+  margin-right: 34rpx;
+  vertical-align: middle;
+  /* border-radius: 50%; */
+}
+
+.header-content .header-info {
+  color: white;
+}
+
+.header-info .header-info-item {
+  height: 56rpx;
+  line-height: 56rpx;
+  font-size: 28rpx;
+}
+
+.header-info .header-info-item:first-child {
+  font-size: 32rpx;
+}
+
+.header-info-item .header-info-edit {
+  width: 20rpx;
+  height: 20rpx;
+  margin-left: 10rpx;
+}
+
+.header-info .header-info-login {
+  font-size: 48rpx;
+  margin-bottom: 10rpx;
+  margin-top: 20rpx;
+}
+
+.module-container {
+  margin-top: -60rpx;
+  padding: 0 30rpx;
+}
+
+.module-content {
+  margin-bottom: 40rpx;
+  background-color: #fff;
+  border-radius: 15rpx;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.module-content .module-item {
+  display: flex;
+  height: 135rpx;
+  padding: 0 64rpx;
+  line-height: 135rpx;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid #f7f7f7;
+}
+
+.module-item .module-item-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.module-item-left .module-icon {
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 32rpx;
+}
+
+.module-item .module-goto {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.hover {
+  background-color: #f7f7f7;
+}
+
+.module-item_hover:first-child {
+  border-top-left-radius: 15rpx;
+  border-top-right-radius: 15rpx;
+}
+
+.loginout_btn {
+  width: 100%;
+  height: 108rpx;
+  line-height: 108rpx;
+  text-align: center;
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #e02020;
+  background-color: #fff;
+  box-shadow: 1rpx 1rpx 1rpx 1rpx rgba(237, 237, 237, 0.2),
+                -1rpx -1rpx 1rpx 1rpx rgba(237, 237, 237, 0.2);
+}

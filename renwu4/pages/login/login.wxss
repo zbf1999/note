@@ -1,0 +1,39 @@
+.logo {
+  width: 308rpx;
+  height: 116rpx;
+  margin-bottom: 150rpx;
+}
+
+.logo .logo-img {
+  width: 100%;
+  height: 100%;
+}
+
+.register-navigator {
+  margin-top: 30rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #005be4;
+}
+
+@keyframes myRotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(180deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.loading-img {
+  width: 104rpx;
+  height: 104rpx;
+  animation: myRotate 1s linear infinite;
+}
+
+

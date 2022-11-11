@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/智能考勤/立即签到</title>
+    <g id="icon/智能考勤/立即签到" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="路径" fill="#2D71F8" fill-rule="nonzero" transform="translate(10.000000, 10.000000) rotate(-360.000000) translate(-10.000000, -10.000000) " points="12 1 12 2 2 2 2 18 18 18 18 8 19 8 19 19 1 19 1 1"></polygon>
+        <path d="M8.96065831,13.9999964 L5.99999501,14 L5.99999863,11.0393367 L14.819,2.221 L14.8188411,2.22050152 L17.0393413,1.33026325e-06 L20.000001,2.96066101 L17.7795008,5.1811612 L8.96065831,13.9999964 Z M15.558,2.96 L7.04710299,11.4711035 L7.04710118,12.9529155 L8.52669266,12.9521735 L17.038,4.44 L15.558,2.96 Z M17.0383696,1.4798442 L16.361,2.156 L17.842,3.637 L18.5186994,2.96017404 L17.0383696,1.4798442 Z" id="形状结合" fill="#2D71F8" fill-rule="nonzero"></path>
+    </g>
+</svg>

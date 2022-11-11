@@ -1,0 +1,41 @@
+<!--pages/carTrip/detail/detail.wxml-->
+<view class="first">
+  <image src="/images/index/ct-car.png"></image>
+  <view class="busN">
+    <view>{{detailItem.busNo}}</view>
+    <text class="tip">请使用校园卡刷卡乘车</text>
+  </view>
+  
+</view>
+
+<view class="second">
+  <scroll-view class="scrV" scroll-y="true">
+    <view class="block">
+      <view class="line1"></view>
+      <view class="zi1">
+        <view class="dot1"></view>
+        <view class="name">
+          <view class="qi">起</view>
+          <view class="qishi qian">{{detailItem.startStation}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="block" wx:for="{{detailItem.middleStation}}" wx:key="index">
+      <view class="line1"></view>
+      <view class="zi1">
+        <view class="dot1"></view>
+        <view class="mid qian">{{item}}</view>
+      </view>
+    </view>
+    <view class="block">
+      <view class="line3"></view>
+      <view class="zi1">
+        <view class="dot1"></view>
+        <view class="name_end">
+          <view class="zhong">终</view>
+          <view class="zhongdian qian">{{detailItem.endStation}}</view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

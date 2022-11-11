@@ -1,0 +1,7 @@
+<!--components/toast.wxml-->
+<Modal visible="{{!!iconType}}" width="{{width}}" height="{{height}}">
+  <view class="flex-col-center">
+    <icon type="{{iconType}}" size="50"></icon>
+    <view class="result-tooltip">{{text}}</view>
+  </view>
+</Modal>

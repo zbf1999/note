@@ -1,0 +1,39 @@
+<view class="container">
+  <view class="logo">
+    <image class="logo-img" src="../../images/logo.svg" mode="aspectFit"></image>
+  </view>
+  <view class="form-wrap">
+    <view class="input-view">
+      <image class="img" src="../../images/studentID.svg" mode="aspectFit"></image>
+      <input class="input-wrap" placeholder-class="input-placeholder" data-id="studentID" placeholder="请输入学号" value="{{studentID}}" bindinput="inputChange"></input>
+    </view>
+    <view class="input-view">
+      <image class="img" src="../../images/password.svg" mode="aspectFit"></image>
+      <input class="input-wrap" placeholder-class="input-placeholder" data-id="password" password="true" placeholder="请输入密码" value="{{password}}" bindinput="inputChange"></input>
+    </view>
+    <view class="confirm-btn-warp">
+      <button class="confirm-btn" hover-class="confirm-btn_hover" disabled="{{disabled}}" bindtap="loginTap">
+        立即登录
+      </button>
+      <navigator class="register-navigator" hover-class="navigator_hover" url="/pages/register/register">
+        没有账号？立即注册
+      </navigator>
+    </view>
+  </view>
+
+  <Modal visible="{{submitting}}">
+    <view class="flex-col-center modal-content">
+      <image class="loading-img" src="../../images/loading.png" mode="aspectFit"></image>
+      <view class="result-tooltip">正在验证登录，请稍后...</view>
+    </view>
+  </Modal>
+
+  <Toast iconType="{{submitSucc ? 'success' : ''}}" text="登录成功"></Toast>
+
+  <Modal visible="{{submitSucc === false}}" showConfirm="{{true}}">
+    <view class="flex-col-center">
+      <view class="result-title">登录失败</view>
+      <view class="result-tooltip">学号或密码输入错误</view>
+    </view>
+  </Modal>
+</view>

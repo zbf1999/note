@@ -1,0 +1,45 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/login/login",
+        "pages/register/register",
+        "pages/home/index/index",
+        "pages/home/phone/index",
+        "pages/home/password/index",
+        "pages/home/introduction/index",
+        "pages/moduleList/moduleList",
+        "pages/empty/empty",
+        "pages/carTrip/list/list",
+        "pages/carTrip/detail/detail",
+        "pages/examService/list/list",
+        "pages/examService/create/create",
+        "pages/eg"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#F6FAFF",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "usingComponents": {
+        "Modal": "./components/modal/index",
+        "Toast": "./components/toast/index",
+        "Filter": "./components/Filter/index",
+        "LoginToast":"./components/loginToast/index"
+    },
+    "plugins": {
+        "crypto": {
+            "version": "0.0.003",
+            "provider": "wxf25d506ff81e19fb"
+        },
+        "tencentvideo": {
+            "version": "1.3.7",
+            "provider": "wxa75efa648b60994b"
+        }
+    },
+    "useExtendedLib": {
+        "weui": true
+    },
+    "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,32 @@
+<!-- 修改手机号 -->
+<view class="container">
+  <form class="form-wrap" bindsubmit="formSubmit">
+    <view class="form-input-wrap">
+      <view class="input-view">
+        <image class="img" src="../../../images/phone.svg" mode="aspectFit"></image>
+        <input class="input-wrap" placeholder-class="input-placeholder" name="phone" data-id="phone" placeholder="请输入新手机号，仅支持数字，11个字符" value="{{phone}}" bindinput="inputChange"></input>
+      </view>
+      <view class="input-tooltip" wx:if="{{phoneInvalid}}">手机号输入不符合要求</view>
+    </view>
+    <view class="form-input-wrap">
+      <view class="input-view">
+        <image class="img" src="../../../images/password.svg" mode="aspectFit"></image>
+        <input class="input-wrap" placeholder-class="input-placeholder" name="pwd" data-id="pwd" password="true" placeholder="请输入密码" value="{{pwd}}" bindinput="inputChange"></input>
+      </view>
+    </view>
+    <view class="confirm-btn-warp">
+      <button class="confirm-btn" hover-class="confirm-btn_hover" disabled="{{disabled}}" formType="submit" loading="{{submitting}}">
+        确定
+      </button>
+    </view>
+  </form>
+
+  <Toast iconType="{{submitSucc ? 'success' : ''}}" text="修改成功"></Toast>
+
+  <Modal visible="{{submitSucc === false}}" showConfirm="{{true}}">
+    <view class="flex-col-center">
+      <view class="result-title">修改失败</view>
+      <view class="result-tooltip">密码输入错误</view>
+    </view>
+  </Modal>
+</view>

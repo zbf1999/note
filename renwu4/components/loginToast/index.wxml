@@ -1,0 +1,12 @@
+<!--components/loginToast/index.wxml-->
+<view class="mask" wx:if="{{visible}}" bindtap="clickMask">
+  <view class="modal-content-wrap" style="height:{{height}}rpx;width:{{width}}rpx;">
+    <view class="modal-content">
+      <slot></slot>
+    </view>
+    <view wx:if="{{showCancel || showConfirm}}" class="modal-btn-wrapper">
+      <view wx:if="{{showConfirm}}"  class="confirm-btn"  bindtap="confirm">立即登录</view>
+      <view wx:if="{{showCancel}}" class="cancel-btn"  bindtap="cancel">稍后登录</view>
+    </view>
+  </view>
+</view>

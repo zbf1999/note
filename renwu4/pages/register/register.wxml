@@ -1,0 +1,46 @@
+<view class="container">
+  <form class="form-wrap" bindsubmit="formSubmit">
+    <view class="form-input-wrap">
+      <view class="input-view">
+        <image class="img" src="../../images/user.svg" mode="aspectFit"></image>
+        <input class="input-wrap" placeholder-class="input-placeholder" name="name" data-id="name" placeholder="请输入姓名，支持中英文字符" value="{{name}}" bindinput="inputChange"></input>
+      </view>
+      <view class="input-tooltip" wx:if="{{nameInvalid}}">用户名中包含非法字符</view>
+    </view>
+    <view class="form-input-wrap">
+      <view class="input-view">
+        <image class="img" src="../../images/studentID.svg" mode="aspectFit"></image>
+        <input class="input-wrap" placeholder-class="input-placeholder" name="studentID" data-id="studentID" placeholder="请输入学号，仅支持数字，12个字符" value="{{studentID}}" bindinput="inputChange"></input>
+      </view>
+      <view class="input-tooltip" wx:if="{{studentIDInvalid}}">学号输入不符合要求</view>
+    </view>
+    <view class="form-input-wrap">
+      <view class="input-view">
+        <image class="img" src="../../images/phone.svg" mode="aspectFit"></image>
+        <input class="input-wrap" placeholder-class="input-placeholder" name="phone" data-id="phone" placeholder="请输入手机号，仅支持数字，11个字符" value="{{phone}}" bindinput="inputChange"></input>
+      </view>
+      <view class="input-tooltip" wx:if="{{phoneInvalid}}">手机号输入不符合要求</view>
+    </view>
+    <view class="form-input-wrap">
+      <view class="input-view">
+        <image class="img" src="../../images/password.svg" mode="aspectFit"></image>
+        <input class="input-wrap" placeholder-class="input-placeholder" name="pwd" data-id="pwd" password="true" placeholder="8-20字符，支持数字、大小写字母、下划线" value="{{pwd}}" bindinput="inputChange"></input>
+      </view>
+    </view>
+    <view class="form-input-wrap">
+      <view class="input-view">
+        <image class="img" src="../../images/passwordConfirm.svg" mode="aspectFit"></image>
+        <input class="input-wrap" placeholder-class="input-placeholder" name="pwdConfirm" data-id="pwdConfirm" password="true" placeholder="请再次输入密码" value="{{pwdConfirm}}" bindinput="inputChange"></input>
+      </view>
+      <view class="input-tooltip" wx:if="{{pwdInvalid}}">
+        {{ pwd !== pwdConfirm ? '输入两次密码不一致': '密码输入不符合要求'}}
+      </view>
+    </view>
+    <view class="confirm-btn-warp">
+      <button class="confirm-btn" hover-class="confirm-btn_hover" disabled="{{disabled}}" formType="submit" loading="{{submitting}}">
+        立即注册
+      </button>
+    </view>
+  </form>
+  <Toast iconType="{{submitResult}}" text="{{submitResult === 'success' ? '注册成功' : '注册失败' }}"></Toast>
+</view>

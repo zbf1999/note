@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/校园活动/时间</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.176471 0 0 0 0 0.443137 0 0 0 0 0.972549 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="icon/校园活动/时间" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g filter="url(#filter-1)" id="编组">
+            <g transform="translate(1.000000, 1.000000)">
+                <polygon id="路径-6" fill="#548EFF" fill-rule="nonzero" points="7.0571795 3 7.0571795 7.00779581 10 9.10093971 9.40025653 10 6 7.58101413 6 3"></polygon>
+                <path d="M7,0 C10.8659932,0 14,3.13400675 14,7 C14,10.8659932 10.8659932,14 7,14 C3.13400675,14 0,10.8659932 0,7 C0,3.13400675 3.13400675,0 7,0 Z M7,1.07692308 C3.72877494,1.07692308 1.07692308,3.72877494 1.07692308,7 C1.07692308,10.2712251 3.72877494,12.9230769 7,12.9230769 C10.2712251,12.9230769 12.9230769,10.2712251 12.9230769,7 C12.9230769,3.72877494 10.2712251,1.07692308 7,1.07692308 Z" id="椭圆形" fill="#548EFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>
