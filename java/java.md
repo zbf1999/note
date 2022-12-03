@@ -530,3 +530,23 @@ withdraw	取款(子类必须根据业务重写)
 3. 动态代理
 
    
+
+## [startUML](https://www.jianshu.com/p/37c0202b6da7)
+
+[教程](https://www.cnblogs.com/jimmyai/p/star_uml_class.html)
+
+1. 介绍类与类之间的关系
+
+   类图：类图是面向对象系统建模中最常用和最重要的图，是定义其它图的基础。类图主要是用来显示系统中的类、接口以及它们之间的静态结构和关系的一种静态模型
+
+   类图的3个基本组件：类名、属性、方法
+
+   类的几个主要关系：实现、关联、泛化、聚合、组合、依赖
+
+   ![](https://tva1.sinaimg.cn/large/008vxvgGly1h8psr4925rj30co0kgt9t.jpg)
+
+   ![](https://tva1.sinaimg.cn/large/008vxvgGly1h8pst2ce9vj30u00xdwhf.jpg)
+
+   
+
+2. 
