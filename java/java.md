@@ -1,8 +1,8 @@
-
-
-![](https://tva1.sinaimg.cn/large/008vxvgGly1h8d50mzotdj30m20a2q3o.jpg)
+![image-20221230171046302](/Users/zbf1999/Documents/GitHub/note/java/assets/image-20221230171046302.png)
 
 ## 数据类型
+
+
 
 <kbd>包装类型</kbd>
 
@@ -206,16 +206,22 @@ protected用于修饰成员，表示在继承体系中成员对于子类可见�
 
 2. 使用选择
 
+   1. 使用接口
 
-   2. 使用接口
-      - 需要让不相关的类都实现一个方法，例如不相关的类都可以实现Compareable接口中的compareTo()方法；
-      - 需要使用多重继承。
+   - 需要让不相关的类都实现一个方法，例如不相关的类都可以实现Compareable接口中的compareTo()方法；
+   - 需要使用多重继承。
+
    2. 使用抽象类
-      - 需要在几个相关的类中共享代码。
-      - 需要能控制继承来的成员的访问权限，而不是都为 public。
-      - 需要继承非静态和非常量字段。
-      
-      > 在很多情况下，接口优先于抽象类，因为接口没有抽象类严格的类层次结构要求，可以灵活地为一个类添加行为。并且从 Java 8 开始，接口也可以有默认的方法实现，使得修改接口的成本也变的很低
+
+   - 需要在几个相关的类中共享代码。
+   - 需要能控制继承来的成员的访问权限，而不是都为 public。
+   - 需要继承非静态和非常量字段。
+
+   > 在很多情况下，接口优先于抽象类，因为接口没有抽象类严格的类层次结构要求，可以灵活地为一个类添加行为。并且从 Java 8 开始，接口也可以有默认的方法实现，使得修改接口的成本也变的很低
+
+<kbd>[this](http://c.biancheng.net/view/953.html)</kbd>
+
+
 
 <kbd>super</kbd>
 
@@ -252,6 +258,12 @@ ExtendsTest e = new SuperExtendExample(1, 2, 3);
 
 ---
 
+## 业务分析
+
+![](https://tva1.sinaimg.cn/large/008vxvgGly1h8r0pzbs7fj30x40kyq5k.jpg)
+
+![](https://tva1.sinaimg.cn/large/008vxvgGly1h8r0pzbs7fj30x40kyq5k.jpg)
+
 ## 面向对象分析
 
 类和对象
@@ -261,7 +273,7 @@ ExtendsTest e = new SuperExtendExample(1, 2, 3);
   |--SavingAcount 储蓄账户
   	|--LoanSavingAccount 贷款的存储账户  ---->实现Loanable接口
   |--CreditAccount 信用账户
-  	|--LoanCreditAccount 贷款的信用账户  ---->实现Loanable接口
+  	|-- 贷款的信用账户  ---->实现Loanable接口
   
 |--Bank 银行类
 ```
@@ -497,8 +509,6 @@ withdraw	取款(子类必须根据业务重写)
 - Class类只存私有构造函数，因此对应Class对象只能有JVM创建和加载
 - Class类的对象作用是运行时提供或获得某个对象的类型信息，这点对于反射技术很重要(关于反射稍后分析)。
 
-
-
 ## 异常
 
 ## 泛型
@@ -507,7 +517,7 @@ withdraw	取款(子类必须根据业务重写)
 
 ## 集合框架
 
-![](https://tva1.sinaimg.cn/large/008vxvgGly1h8njzz4y22j31a60tajyg.jpg)
+
 
 ## java 多线程与并发
 
