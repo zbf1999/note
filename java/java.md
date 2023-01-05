@@ -212,11 +212,88 @@ class PassByValueExample {
 <kbd>控制结构</kbd>
 
 ```java
+初始值可以定义到外面
 int n = 0;
 for (; n < 10; ) {
     System.out.println("h");
     n++;
 }
+```
+
+```java
+可以有多条初始化语句
+int count = 3;
+for (int i = 0, j = 0; i < count; i++, j += 2) {
+    System.out.println(i + j);
+}
+```
+
+## 数组
+
+数组创建后，如果没有赋值，有默认值。
+
+int, short, byte, long:0;    float, double:0.0;    char:\u0000;    boolean:false;    String:null;
+
+<kbd>数组赋值机制</kbd>
+
+数组在默认情况下是引用传递，赋的值是地址，赋值方式为引用传递。
+
+```java
+int[] arr1 = {1, 2, 3};
+System.out.println(arr1[0]);//1
+int[] arr2 = arr1;
+arr2[0] = 2;
+System.out.println(arr1[0]);//2
+```
+
+<kbd>数组拷贝</kbd>
+
+```java
+int[] arr1 = {1, 2, 3};
+int[] arr2 = new int[arr1.length];
+for (int i = 0; i < arr1.length; i++) {
+    arr2[i] = arr1[i];
+}
+```
+
+```java
+System.arraycopy(arr1, 0, arr2, 0, num);
+```
+
+<kbd>数组反转</kbd>
+
+```java
+for (int i = 0; i < num / 2; i++) {
+    int temp = arr1[num - 1 - i];
+    arr1[num - 1 - i] = arr1[i];
+    arr1[i] = temp;
+}
+```
+
+<kbd>数组扩容</kbd>
+
+```java
+int[] arr = {1, 2, 3};
+int[] arrNew = new int[arr.length + 1];
+System.arraycopy(arr, 0, arrNew, 0, arr.length);
+arrNew[arrNew.length - 1] = 4;
+```
+
+```java
+int[] arr1 = {1, 2, 3};
+char ans;
+do {
+    System.out.println("是否添加");
+    ans = input.next().charAt(0);
+    if (ans == 'y') {
+        int[] arrNew = new int[arr1.length + 1];
+        System.arraycopy(arr1, 0, arrNew, 0, arr1.length);
+        System.out.println("请输入要添加的数");
+        int num = input.nextInt();
+        arrNew[arrNew.length - 1] = num;
+        arr1 = arrNew;
+    }
+}while (ans == 'y');
 ```
 
 
